@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  min-height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("image.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 100px;
+}
+.nav-links {
+  flex: 3;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 4px 12px 0px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #e9b50a;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.kotak-teks {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.kotak-teks h3 {
+  font-size: 60px;
+}
+.kotak-teks p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.tombol {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.tombol:hover {
+  border: 1px solid rgb(245, 122, 8);
+  background: rgb(245, 122, 8);
+  transition: 1s;
+}
+nav .fa {
+  display: none;
+}
+@media (max-width: 700px) {
+  .kotak-teks h3 {
+    font-size: 18px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: rgb(245, 122, 8);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/* tempat wisata populer */
+.tempat {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.h3 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+p {
+  color: rgb(90, 84, 84);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tempat-col {
+  flex-basis: 31%;
+  background: rgb(186, 200, 238);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.tempat-col:hover {
+  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* aktifitas */
+.aktifitas {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.aktifitas-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.aktifitas-col img {
+  width: 100%;
+  display: block;
+}
+.layar {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+}
+.layar:hover {
+  background: rgba(98, 101, 146, 0.7);
+}
+.layar h3 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layar:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/*  */

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style1.css" >
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>WISATA | PAPUA</title>
+
+        
+<body>
+    <section class="header">
+        <nav>
+            
+            <a href="index.html"><img src="image/logo.png" width="80px" height="80px"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="admin.html">ADMIN</a></li>
+                    <li><a href="wisata.html">WISATA</a></li>
+                    <li><a href="galeri.html">GALERI</a></li>
+                    <li><a href="tentang.html">TENTANG KAMI</a></li>
+                    <li><a href="kontak.html">KONTAK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu"></i>
+        </nav>
+        <div class="kotak-teks">
+            <h3>GALERI</h3>
+        </div>
+
+    </section>
+    
+    <!-- Isi -->
+    <section class="tempat">
+        <h2>FOTO WISATA</h2>
+        <div class="row">
+            <div class="col">
+                <img src="image/renang.jpg" height="200" width="200">
+            </div>
+            <div class="col">
+                <img src="image/dayung.jpeg" height="200" width="200">
+            </div>
+            <div class="col">
+                <img src="image/senja.JPG" height="200" width="200">
+            </div>
+            <div class="col">
+                <img src="image/dayung.jpeg" height="200" width="200">
+            </div>
+            <div class="col">
+                <img src="image/dayung.jpeg" height="200" width="200">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Aktifitas berwisata -->
+    <section class="aktifitas">
+        <h2>VIDIO</h2>
+        <div class="row">
+            <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oYRda7UtuhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oYRda7UtuhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oYRda7UtuhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oYRda7UtuhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- JavaScript  Untuk aksi Toogle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

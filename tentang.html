@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style1.css" >
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>WISATA | PAPUA</title>
+
+        
+<body>
+    <section class="header">
+        <nav>
+            
+            <a href="index.html"><img src="image/logo.png" width="80px" height="80px"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="admin.html">ADMIN</a></li>
+                    <li><a href="wisata.html">WISATA</a></li>
+                    <li><a href="galeri.html">GALERI</a></li>
+                    <li><a href="tentang.html">TENTANG KAMI</a></li>
+                    <li><a href="kontak.html">KONTAK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu"></i>
+        </nav>
+        <div class="kotak-teks">
+            <h3>TENTANG KAMI</h3>
+        </div>
+
+    </section>
+    
+    <!-- Isi -->
+    <section class="tempat">
+        <h2>TENTANG KAMI</h2>
+        <br>Website ini di buat dengan tujuan memudahkan kita untuk mencari dan menemukan tempat wisata 
+            sesuai dengan yang kita inginkan,Namun kami minta maaf apabila terdapat banyak kekurangan 
+            dalam website ini. Mohon di maafkan </br>
+        <p1>Terimakasih. Tuhan Memberkati</p1>
+ 
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript  Untuk aksi Toogle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
